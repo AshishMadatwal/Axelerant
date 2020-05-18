@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+			<style>
+					/* Popup container - can be anything you want */
+					.popup {
+						position: relative;
+						display: inline-block;
+						cursor: pointer;
+						-webkit-user-select: none;
+						-moz-user-select: none;
+						-ms-user-select: none;
+						user-select: none;
+					}
+					
+					/* The actual popup */
+					.popup .popuptext {
+						visibility: hidden;
+						width: 160px;
+						background-color: #555;
+						color: #fff;
+						text-align: center;
+						border-radius: 6px;
+						padding: 8px 0;
+						position: absolute;
+						z-index: 1;
+						bottom: 125%;
+						left: 50%;
+						margin-left: -80px;
+					}
+					
+					/* Popup arrow */
+					.popup .popuptext::after {
+						content: "";
+						position: absolute;
+						top: 100%;
+						left: 50%;
+						margin-left: -5px;
+						border-width: 5px;
+						border-style: solid;
+						border-color: #555 transparent transparent transparent;
+					}
+					
+					/* Toggle this class - hide and show the popup */
+					.popup .show {
+						visibility: visible;
+						-webkit-animation: fadeIn 1s;
+						animation: fadeIn 1s;
+					}
+					
+					/* Add animation (fade in the popup) */
+					@-webkit-keyframes fadeIn {
+						from {opacity: 0;} 
+						to {opacity: 1;}
+					}
+					
+					@keyframes fadeIn {
+						from {opacity: 0;}
+						to {opacity:1 ;}
+					}
+					</style>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/90bc2e6f7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="div1">
+      <img
+        class="img-responsive img1"
+        src="https://media.gettyimages.com/photos/rear-view-of-business-people-sitting-on-chairs-at-table-by-window-picture-id1032769882?s=2048x2048"
+      />
+      <header>
+        <nav class="navbar navbar-dark bg-dark1 navbar-expand-sm">
+          <a class="navbar-brand" href="#">
+            <!-- <img
+              src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/logo_white.png"
+              width="30"
+              height="30"
+              alt="logo"
+            /> -->
+            <h4 style="margin-left: 10%; margin-top:5%;padding:2px;">
+              COMPANY LOGO
+            </h4>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-list-2"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-list-2">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >About <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <div id="li1">
+                <li class="nav-item" id="li2">
+                  <i
+                    class="fa fa-comment-o"
+                    aria-hidden="true"
+                    style= width:20px;"
+                  ></i>
+                  Get In Touch
+                </li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+			</header>
+			
+		</div>
+		<div id="div2" >
+				<h1 id="h1">integer bibendum sit amet</h1>
+				<h1 id="h1">arcu vel egestas</h1>
+				<div>					
+					<br>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-2" id="icon" >
+						<i class="fa fa-users" id="icon1"></i><br>Service Name</div>
+					<div class="col-md-1"></div>
+					<div  class="col-md-2" id="icon" >
+						<i class="fa fa-users" id="icon1" ></i><br>Service Name</div>
+						<div class="col-md-1"></div>
+						<div class="col-md-2" id="icon" ><i class="fa fa-users" id="icon1" ></i><br>Service Name</div>.</div>
+				</div>
+
+			</div>
+			<br><br>
+			<div class="row container-fluid" id="op">
+			<div class="col-md-6">
+				<p>
+					<h3>Mauris id bibendum est. Proin Dapibus solicitidun iaculis, Maecenas Condimetum maximas laoreet.
+					</h3>		</p><br>
+					<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					</p>
+			</div>
+			<div class="col-md-6">
+				<img  width=" 95%"  src="https://thumbs.dreamstime.com/b/multiethnic-business-people-world-map-collage-representing-global-source-reference-http-visibleearth-nasa-44395166.jpg">
+			</div>
+			</div>
+			<div class="jumbotron" >
+				<h2 class="text-center"> Testimonials</sh2>
+				<br><br>
+				<div class="row" style="margin-left:5%;">
+					<div class="col-md-4">
+				<button type="button"  class="btn " data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					
+<i class="fa fa-user" aria-hidden="true" style="font-size:22px; "> Click to see hover</i>
+					</button>
+				</div>
+				<div class="col-md-4">
+						<button type="button"  class="btn " data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+								
+<i class="fa fa-user" aria-hidden="true" style="font-size:22px;">  Click to see hover</i>
+							</button>
+						</div>
+						<div class="col-md-4">
+								<button type="button" class="btn " data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+										
+<i class="fa fa-user" aria-hidden="true" style="font-size:22px;">  Click to see hover</i>
+									</button>
+								</div></div>
+			<script type="text/javascript">
+					
+					$(function () {
+					$('[data-toggle="popover"]').popover()
+				})
+				</script>
+				
+			</div>
+			<br>
+			<div id="div3"> 
+				<h2 class="text-center">Convinced to work with us?</h2>
+				<br>
+				<h4 class="text-center">Company has helped agencies keep their promises to clients since 2005.</h4>
+				<br><br>
+				<div class="row text-center">
+						<div class="col-md-4">
+							<div class="form-group">
+									<input type="text" class="form-control" placeholder="Full Name" id="first">
+								</div>
+							</div>
+							<div class="col-md-4">
+									<div class="form-group">
+											<input type="email" class="form-control" placeholder="Email Address" id="first">
+										</div>
+									</div>
+									<div class="col-md-4">
+											<div class="form-group">
+													<input type="tel" class="form-control" placeholder="Phone Number" id="first">
+												</div>
+											</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-md-12 text-center">
+						<textarea class="form-control" id="message2" name="message2" required="" placeholder="Message in brief" rows="6"></textarea>
+				</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button class="btn" style="background-color:rgba(252, 78, 3); border-radius:25px; color:white; width:150px;">Submit</button>
+				</div>
+			</div>
+			</div>
+			<footer style="background-color:rgba(0, 0, 0, 0.829);height:150px;padding: 4%; color:rgba(190, 178, 178, 0.74)"> 
+				<div class="row">
+					<div class="col-md-6" id="f1">&copy;2017 Company.All Rights Reserved.</div>
+					<div class="col-md-6 " style="text-align:right; margin-left: -50px;">Follow Us on:<a href="#" class="fab fa-facebook" id="fab"></a>
+						<a href="#" class="fab fa-twitter" id="fab"></a>
+						<a href="#" class="fab fa-linkedin-in" id="fab"></a>
+						<a href="#" class="fa fa-envelope" id="fab"></a></div>
+				</div>
+			</footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
